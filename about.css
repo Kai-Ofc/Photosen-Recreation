@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Josefin Sans', sans-serif;
+   margin: 0;
+   background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 33px;
+    color: white;
+    align-items: center;
+    height: 8vh;
+}
+
+#sitemenu{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-evenly;
+}
+#about{
+   color: #20c997;
+}
+
+.sitemenu{
+    font-size: 12px;
+    text-decoration: none;
+    color: gray;
+    text-decoration: none;
+} 
+
+.sitemenu:hover{
+    color: #20c997;
+    cursor: pointer;
+}
+
+#gallery{
+   position: relative;
+}
+
+#submenu{
+   position: absolute;
+   list-style: none;
+   background-color: white;
+   color: gray;
+   width: 300%;
+   padding-left: 20px;
+   top: 30;
+   left: -20px;
+   border-top: #20c997 solid;
+   opacity: 0;
+   z-index: -99;
+   transition: .5s;
+}
+
+#submenu li{
+   height: 4vh;
+   padding-top: 1.5vh;
+}
+
+#gallery:hover #submenu{
+   opacity: 1;
+   z-index: 99;
+}
+
+a{
+   text-decoration: none;
+   color: gray;
+}
+
+a:hover{
+    color: #20c997;
+    cursor: pointer;  
+}
+
+#subsubmenu{
+   position: absolute;
+   list-style: none;
+   background-color: white;
+   color: gray;
+   width: 100%;
+   padding-left: 20px;
+   top: 87%;
+   left: 100%;
+   border-top: #20c997 solid;
+   opacity: 0;
+   z-index: -99;
+   transition: .5s;
+}
+
+#mostrarsub:hover #subsubmenu{
+   opacity: 1;
+   z-index: 99;
+}
+
+#subsubmenu li{
+   height: 4vh;
+   padding-top: 1.5vh;
+}
+
+.icons{
+   padding: 0px 10px 0px 10px; 
+}
+
+svg{
+    fill: gray;
+    height: 1.789vh;
+    padding: 0px 10px 0px 10px; 
+}
+
+.icons svg:hover{
+   transition: .3s;
+   fill: white;
+   cursor: pointer;
+}
+
+#service{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#service span{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    left: 42%;
+}
+
+main {
+   display: flex;
+   justify-content: space-between;
+   background: none;
+   flex-wrap: wrap;
+}
+
+.imgs {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.imgs img {
+    filter: saturate(0);
+    transition: .3s;
+}
+
+.imgs img:hover {
+    transition: .3s;
+    filter: saturate(1);
+    transform: scale(1.02);
+    filter: brightness(80%);
+    cursor: pointer;
+
+}
+
+.block {
+    display: block;
+    width: 31%;
+    height: 32vh;
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: none;
+}
+
+.textoblock {
+   position: absolute;
+   top: 5%;
+   left: 0%;
+   color: white;
+   text-align: left;
+   width: 100%;
+   font-size: 2em;
+   text-shadow: 1px 1px 1px 1px black;
+}
+
+.textoblock2 {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    color: #777;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+.textoblock3 {
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    color: #777;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+.portrait {
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.portrait img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    width: 15%;
+    filter: saturate(0);
+    transition: .3s;
+}
+
+.portrait #img2 {
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    border-radius: 50%;
+    width: 15%;
+    filter: saturate(0);
+    transition: .3s;
+}
+
+.portrait #img3 {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    border-radius: 50%;
+    width: 15%;
+    filter: saturate(0);
+    transition: .3s;
+}
+
+.portrait img:hover {
+    transition: .3s;
+    filter: saturate(1);
+    transform: scale(1.02);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.portrait #img2:hover {
+    transition: .3s;
+    filter: saturate(1);
+    transform: scale(1.02);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.portrait #img3:hover {
+    transition: .3s;
+    filter: saturate(1);
+    transform: scale(1.02);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+#textoportrait{
+    top: 75%;
+    left: -33.5%;
+    position: absolute;
+    color: #777;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+#textoportrait2{
+    top: 75%;
+    left: 0%;
+    position: absolute;
+    color: #777;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+#textoportrait3{
+    top: 75%;
+    left: 33.5%;
+    position: absolute;
+    color: #777;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+#portraiticons{
+    background: none;
+    position: absolute;
+    left: 13%;
+    top: 86%;
+    height: 1.789vh;
+    padding: 0px 10px 0px 10px; 
+}
+
+#portraiticons svg{
+    fill: #20c997;
+}
+
+#portraiticons svg:hover{
+    transition: .3s;
+    fill: #16966f;
+    cursor: pointer;
+}
+
+#portraiticons2{
+    background: none;
+    position: absolute;
+    left: 47%;
+    top: 86%;
+    height: 1.789vh;
+    padding: 0px 10px 0px 10px; 
+}
+
+#portraiticons2 svg{
+    fill: #20c997;
+}
+
+#portraiticons2 svg:hover{
+    transition: .3s;
+    fill: #16966f;
+    cursor: pointer;
+}
+
+#portraiticons3{
+    background: none;
+    position: absolute;
+    left: 79%;
+    top: 86%;
+    height: 1.789vh;
+    padding: 0px 10px 0px 10px; 
+}
+
+#portraiticons3 svg{
+    fill: #20c997;
+}
+
+#portraiticons3 svg:hover{
+    transition: .3s;
+    fill: #16966f;
+    cursor: pointer;
+}
+
+
+footer{
+   display: flex;
+   position: relative;
+   color: #777;
+   align-items: center;
+   height: 10vh;
+   width: 100%;
+}
+
+footer span{
+   position: absolute;
+   left: 34.5%;
+}
+
+footer svg{
+   fill: #777;
+   height: 1.789vh;
+}
+
+#Colorlib{
+   position: absolute;
+   left: 102%;
+   top: 28%;
+   color: #20c997;
+}
